@@ -1,0 +1,23 @@
+!!omap
+
+- $large$common$timetable: true
+- $common$timetable: &common-timetable !!omap
+  - 2015-12-03: [   2, 3]
+  - 2015-12-04: [1, 2, 3]
+  - 2015-12-05: [1, 2, 3]
+  - 2015-12-06: [   2, 3]
+  - 2015-12-07: [1, 2, 3]
+  - 2015-12-08: [1, 2, 3]
+  - 2015-12-09: [1, 2, 3]
+  - 2015-12-10: [1,     ]
+
+- $large$groups[g8r2]: true
+- $groups[g8r2]:
+    name: Зяблики
+    timetable: *common-timetable
+
+- $large$groups[g8r1]: true
+- $groups[g8r1]:
+    name: Снегири
+    timetable: *common-timetable
+

@@ -1,0 +1,46 @@
+!!omap
+
+- $matter[integral,g8r2]:
+  - r2
+
+- $matter[integral,g8r1]:
+  - r1
+
+- r2:
+    $groups$delegate$into: false
+    $groups$matter$into: false
+    $timetable:
+      g8r2:
+        2015-12-05: {}
+    $authors:
+    - Глеб Александрович Погудин
+    $matter[g8r2,-no-header]:
+    - .[header]
+    $matter[g8r2,no-header]:
+    - ../r2-main
+    - verbatim: \hrulefill
+    - ../r2-more[contained]
+    $matter[g8r2,add-toc,no-header]:
+    - ../r2-main
+    - verbatim: \hrulefill
+    - ../r2-more[contained,-add-toc]
+
+- r1:
+    $groups$delegate$into: false
+    $groups$matter$into: false
+    $timetable:
+      g8r1:
+        2015-12-05: {}
+    $authors:
+    - Глеб Александрович Погудин
+    $matter[g8r1,-no-header]:
+    - .[header]
+    $matter[g8r1,no-header]:
+    - ../r1-main
+    - verbatim: \hrulefill
+    - ../r1-more[contained]
+    $matter[g8r1,add-toc,no-header]:
+    - ../r1-main
+    - verbatim: \hrulefill
+    - ../r1-more[contained,-add-toc]
+
