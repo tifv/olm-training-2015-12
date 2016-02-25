@@ -33,6 +33,11 @@ Integral:
   - verbatim: \mainmatter
   - delegate: .[integral]
 
+  - verbatim: \chapter{Дополнительные материалы}
+  - - verbatim: \begin{jeolmlabelspace}{solutions}
+    - /algebra/mixture/solutions
+    - verbatim: \end{jeolmlabelspace}
+
   $matter[integral]:
   - g8r2
   - g8r1
